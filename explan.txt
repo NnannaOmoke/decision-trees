@@ -1,0 +1,2 @@
+Gini impurity is the measure of stochasticity or one-ness of a dataset. The max gini impurity is 0.5 (when each class present in the data has equal number of observations, i.e. very chaotic)
+and the min is 0 (all observations belong to exactly one class). Its formaula is sum(p(class)[1-p(class)])
