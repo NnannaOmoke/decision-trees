@@ -14,3 +14,5 @@ A grid search will be useful in this, i.e. it is an important tuning hyperparame
 Bootstraping is the when in splitting the features for analysis as a tree in the random forest, we also take a fraction of the observations available in the dataset
 bagging -> Bootstrapped and AGgregated data. (OOB) As some columns are not used when bootstrapping, they can be used as good test data to generate performance metrics
 They're used as a performance metric, and they do not affect the performance of the model
+Decision trees can be improved by boosting. Which can also be applied to any other kind of ml models
+Ada boosts uses weak learners in ensemble to create a better learner. it's adaptive because each tree improves on the assumptions made by the last
