@@ -8,7 +8,7 @@ Number of estimators [64 - 128 recommended]
 How many features per estimator?
 Bootstraping? Is it allowed?
 Out of Bag error? Do we calculate Out of Bag error?
-Apparently, random forests do NOT overfit. What arrogance???Apparently, the results become high correlated as the trees begin to produce very similar results
+Apparently, random forests do NOT overfit. What arrogance??? Apparently, the results become high correlated as the trees begin to produce very similar results
 The best formula for choosing number of features is log2(n(features) + 1), however, sqrt(n(features) is the new standard), and n/3 is very popular for regression tasks
 A grid search will be useful in this, i.e. it is an important tuning hyperparameter.
 Bootstraping is the when in splitting the features for analysis as a tree in the random forest, we also take a fraction of the observations available in the dataset
@@ -16,3 +16,5 @@ bagging -> Bootstrapped and AGgregated data. (OOB) As some columns are not used 
 They're used as a performance metric, and they do not affect the performance of the model
 Decision trees can be improved by boosting. Which can also be applied to any other kind of ml models
 Ada boosts uses weak learners in ensemble to create a better learner. it's adaptive because each tree improves on the assumptions made by the last
+Gradient boosting is when instead of trying to adjust on the assumptions, adjustments are made on the error. Thus the sequential trees after the initial learner try to predict off the previous learner's error
+The key hyperparameter is the learning rate. It seems particularly well suited to regression. It uses the logit to make classifications
